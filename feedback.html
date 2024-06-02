@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Waste Management Feedback</h1>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="stars">Stars:</label>
+                <div class="star-rating" id="stars">
+                    <span class="star" data-value="5">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="deliveryFeedback">How was the delivery:</label>
+                <input type="text" id="deliveryFeedback" name="deliveryFeedback" required>
+            </div>
+            <div class="form-group">
+                <label for="pickupPersonFeedback">Rate the pickup person:</label>
+                <input type="text" id="pickupPersonFeedback" name="pickupPersonFeedback" required>
+            </div>
+            <div class="form-group">
+                <label for="overallFeedback">Rate the overall service:</label>
+                <input type="text" id="overallFeedback" name="overallFeedback" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Trash Truck Pickup</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <h1>Schedule Trash Truck Pickup</h1>
+    <br><br>
+    <form id="schedule-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" required>
+        
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" required>
+        
+        <label for="email-address">Email Address:</label>
+        <input type="email" id="email-address" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        
+        <label for="waste-type">Type of Waste:</label>
+        <input type="text" id="waste-type" required>
+        
+        <label for="instructions">Any Instructions:</label>
+        <textarea id="instructions" rows="4"></textarea>
+        
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" required>
+        
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" required>
+
+        <button type="submit">Schedule Pickup</button>
+    </form>
+
+    <div id="reminder-message"></div>
+
+    <script src="schedule.js"></script>
+</body>
+</html>
